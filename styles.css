@@ -1,0 +1,256 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body and General Layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Background Video */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire viewport */
+    z-index: -1; /* Keeps the video behind other content */
+}
+
+/* Home Page Specific Styling */
+.home-intro {
+    text-align: center;
+    padding: 2rem;
+    background-color: #050f6dd7;
+}
+
+/* Celebrating Section Styling for University Theme */
+.celebrating-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for emphasis */
+    max-width: 800px;
+    margin: 0 auto; /* Center content */
+    border-radius: 10px;
+}
+
+.university-heading {
+    font-size: 3rem;
+    color: #facd05; /* Gold color to reflect a university’s prestigious feel */
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Georgia', serif; /* Classic, formal font for academic tone */
+}
+
+.university-text {
+    font-size: 1.5rem;
+    color: #ffffff; /* White text for contrast */
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif; /* Simple, readable font for body text */
+    text-align: justify; /* Justified text for a clean academic layout */
+}
+
+/* Call to Action Buttons and Scroll to Top */
+.cta-button, .scroll-top {
+    text-decoration: none;
+    color: white;
+    background-color: #0078FF;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: auto;
+    display: inline-block;
+}
+
+.cta-button:hover, .scroll-top:hover {
+    background-color: #facd05;
+    transform: scale(1.05);
+}
+
+/* Highlights Section */
+.highlights {
+    text-align: center;
+    padding: 2rem;
+}
+
+.highlights h2 {
+    font-size: 2rem;
+    color: #0078FF;
+    margin-bottom: 1rem;
+}
+
+.highlights p {
+    font-size: 1.1rem;
+    color: #facd05;
+    margin-bottom: 2rem;
+}
+
+.highlight-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Hover Effect for Highlight Cards */
+.highlight-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Scale up and change shadow on hover */
+.highlight-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+}
+
+/* Highlight Card Text Fade-In Effect */
+.highlight-card h3, .highlight-card p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* On hover, text fades in and moves up */
+.highlight-card:hover h3, .highlight-card:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Color change on hover for the text */
+.highlight-card:hover h3 {
+    color: #0078FF; /* Change text color */
+}
+
+.highlight-card:hover p {
+    color: #facd05; /* Change text color */
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #0078FF;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Timeline Section */
+.timeline-section {
+    position: relative;
+    padding: 50px 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.timeline-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    text-align: left;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: Adds a dark semi-transparent background to each item */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.timeline-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.timeline-content {
+    max-width: 600px;
+}
+
+.timeline-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Video Section */
+.timeline-video {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: Add a dark background for the video container */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.timeline-video h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-video video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline-item img {
+        max-width: 100%;
+    }
+
+    .timeline-content {
+        text-align: center;
+    }
+
+    .timeline-video video {
+        max-width: 100%;
+    }
+}

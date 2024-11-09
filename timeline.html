@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="pixel.mp4" type="video/mp4"> <!-- Replace with your video file -->
+        Your browser does not support the video tag.
+    </video>
+    <!-- Header with Navigation -->
+    <header>
+        <h2>ACT</h2>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="timeline.html">TIMELINE</a>
+        </nav>
+    </header>
+
+    <!-- Timeline Section -->
+    <main>
+        <section id="timeline" class="timeline-section">
+            <h2>Timeline of Events</h2>
+
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+                <img src="Pic1.jpeg" alt="Event 1 Image">
+                <div class="timeline-content">
+                    <h3>Foundation Day</h3>
+                    <p>This event marked the beginning of our celebrations with various performances and activities.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+                <img src="pic2.jpeg" alt="Event 2 Image">
+                <div class="timeline-content">
+                    <h3>Lamparoza</h3>
+                    <p>A day full of joy and camaraderie, celebrating the spirit of our college community.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+                <img src="pic3.jpg" alt="Event 3 Image">
+                <div class="timeline-content">
+                    <h3>Awarding dean lister</h3>
+                    <p>A thrilling event where students participated in various sports, showcasing their talents and team spirit.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item">
+                <img src="pic4.jpeg" alt="Event 4 Image">
+                <div class="timeline-content">
+                    <h3>Admin Faculty Night</h3>
+                    <p>An award ceremony honoring outstanding performances and achievements throughout the year.</p>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="timeline-video">
+                <h3>Event Highlights Video</h3>
+                <video controls>
+                    <source src="36th anniversary.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <footer>
+        <button class="scroll-top" onclick="scrollToTop()">↑</button>
+    </footer>
+
+    <!-- JavaScript for Scroll to Top -->
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

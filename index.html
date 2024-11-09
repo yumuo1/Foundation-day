@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="pixel.mp4" type="video/mp4"> <!-- Replace with your video file -->
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Header with Navigation -->
+    <header>
+        <h1>ACT</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="timeline.html">TIMELINE</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Introduction Section -->
+        <section class="home-intro">
+            <h2>Welcome to Asian College of Technology</h2>
+            <p>
+                Celebrating 36 years of excellence, Asian College of Technology (ACT) has been a pillar of educational achievement, community engagement, and innovation. Join us as we honor our history and look forward to a bright future.
+            </p>
+            <div class="cta-buttons">
+                <a href="about.html" class="cta-button">Learn More About Us</a>
+                <a href="timeline.html" class="cta-button">View Our Timeline</a>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="highlights">
+            <h2>Highlights of Our Journey</h2>
+            <p>Discover the milestones and unforgettable moments that have shaped our institution over the years.</p>
+            <div class="highlight-cards">
+                <div class="highlight-card">
+                    <h3>Foundation Day</h3>
+                    <p>A memorable day that marks the beginning of our legacy.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>College Day</h3>
+                    <p>Celebrating the spirit of unity and community.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Lamparoza</h3>
+                    <p>A showcase of talent, in dancing and acting each school departments.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <footer>
+        <button class="scroll-top" onclick="scrollToTop()">↑</button>
+    </footer>
+
+    <!-- JavaScript for Scroll to Top -->
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Smooth scroll-to-top functionality with fade-in effect for the button
+        const scrollTopBtn = document.querySelector('.scroll-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollTopBtn.style.display = 'block';
+                scrollTopBtn.style.opacity = 1;
+            } else {
+                scrollTopBtn.style.opacity = 0;
+                setTimeout(() => scrollTopBtn.style.display = 'none', 300);
+            }
+        });
+    </script>
+</body>
+</html>
